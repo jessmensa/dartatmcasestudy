@@ -1,0 +1,55 @@
+ATM command line Application.
+- ATM CLASS(authenticateUser: Boolean = false) 
+- Account class
+  - accountNumber: Integer 
+  - userPin: Integer 
+  - availableBalance: Double 
+  - totalBalance: Double 
+  Methods 
+  - checkUserPinTyped(): Boolean 
+  - getAvailableBalance(): Double 
+  - getTotalBalance(): Double 
+  - credit()
+  - debit() 
+- BalanceInquiry Class 
+  - accountNumber: Integer 
+  Method 
+  + execute() 
+- Withdrawal class 
+  - accountNumber: Integer 
+  - amount: Double 
+  Method 
+  - execute() 
+- Deposit class 
+  - accountNumber: Integer 
+  - amount: Double 
+  Method 
+  - execute() 
+- BankDatabase Class 
+  Methods
+  - authenticateUser(): Boolean 
+  - getAvailableBalance(): Boolean 
+  - getTotalBalance(): Double 
+  - credit() 
+  - debit() 
+- Screen Class 
+  Methods 
+  - displayMessage() 
+- Keypad Class 
+  Methods 
+  - getInput(): Integer 
+- CashDispenser class 
+  - count: Integer = 500  // lets start w 500 
+  Method 
+  - dispenseCash()
+  - isSufficientCashAvailable(): Boolean 
+- DepositSlot class 
+ - isEnvelopRecieved(): Boolean 
+
+
+
+ Dart Getter Method 
+ General design goal of Getter methods in dart is that 
+ they dont make any additional unknown behavior other than 
+ getting a property. 
+ Same goes for the setter method. 
