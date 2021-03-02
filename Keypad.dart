@@ -1,9 +1,10 @@
 import 'dart:io';
 
+// this class is changed and used inside app.
 class Keypad {
   Stdin _input;
 
-  Keypad(this._input);
+  Keypad();
 
-  int get getInput => _input.readByteSync();
+  int get getInput => stdin.readByteSync();
 }

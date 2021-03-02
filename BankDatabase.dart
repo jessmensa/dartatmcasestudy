@@ -4,7 +4,7 @@ class BankDatabase {
   List<Account> _accounts;
 
   BankDatabase() {
-    _accounts = List<Account>();
+    _accounts = List<Account>(2);
     _accounts[0] = new Account(12345, 54321, 1000.0, 1200.0);
     _accounts[1] = new Account(98765, 56789, 200.0, 200.0);
   }
